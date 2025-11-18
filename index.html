@@ -38,8 +38,23 @@
     .btn:hover { box-shadow:0 6px 14px rgba(2,6,23,.08); transform:translateY(-1px); }
     .btn.primary { background:var(--brand); color:white; border-color:transparent; }
 
-    .hero { padding: 80px 0 32px; }
-    .hero .grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; }
+    .hero {
+  padding: 80px 0 32px;
+  background-image: url('rc-logo-bg.jpg'); /* path to the image you uploaded */
+  background-size: cover;                  /* fill the area */
+  background-position: center;             /* keep logo centered */
+  background-attachment: fixed;           /* makes the background stay put when you scroll */
+  color: white;                           /* makes text in this section white by default */
+}
+    .hero .grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.78); /* dark see-through panel */
+  border-radius: 18px;
+  padding: 24px;
+}
     .eyebrow { display:inline-flex; align-items:center; gap:.5rem; font-size:.85rem; color:var(--muted); background:#e6f6f7; border:1px solid #c5ecee; padding:.35rem .6rem; border-radius:999px; }
     h1 { font-size: clamp(1.9rem, 3vw + 1rem, 3rem); line-height:1.1; margin:.6rem 0; }
     .tagline { font-size:1.15rem; color:var(--muted); margin:.6rem 0 1.1rem; }
